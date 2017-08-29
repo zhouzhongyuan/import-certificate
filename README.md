@@ -9,8 +9,9 @@ security import ./bundle.p12 -P secretPassword
 - -k  import to which keychain
 - -A  Allow any application to access the imported key without warning (insecure, not recommended!)
 - -T  Specify an application which may access the imported key (multiple -T options are allowed)
-
-[osx - install .p12 or .cer in console macos - Stack Overflow](https://stackoverflow.com/questions/7485806/install-p12-or-cer-in-console-macos)
+### Ref
+- [osx - install .p12 or .cer in console macos - Stack Overflow](https://stackoverflow.com/questions/7485806/install-p12-or-cer-in-console-macos)
+- [security manual page](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/security.1.html)
 
 ## How to use
 
