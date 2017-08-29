@@ -4,9 +4,6 @@ function importCertificate(certificatePath, certificatePassword) {
     certificatePassword = certificatePassword || '';
     return new Promise((resolve, reject) => {
         const ls = spawn('security', ['import', certificatePath, `-P`, certificatePassword, '-A']);
-        ls.stdout.on('data', (data) => {
-            console.log('info', `Import certificate. ${data}`);
-        });
         ls.stderr.on('data', (data) => {
             data = data.toString();
             reject({
